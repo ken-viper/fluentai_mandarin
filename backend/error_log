@@ -1,0 +1,2233 @@
+[2023-06-08 14:51:59 +0000] [19818] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f135dcd9d80>
+  on_reload: <function OnReload.on_reload at 0x7f135dcd9ea0>
+  when_ready: <function WhenReady.when_ready at 0x7f135dcd9fc0>
+  pre_fork: <function Prefork.pre_fork at 0x7f135dcda0e0>
+  post_fork: <function Postfork.post_fork at 0x7f135dcda200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f135dcda320>
+  worker_int: <function WorkerInt.worker_int at 0x7f135dcda440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f135dcda560>
+  pre_exec: <function PreExec.pre_exec at 0x7f135dcda680>
+  pre_request: <function PreRequest.pre_request at 0x7f135dcda7a0>
+  post_request: <function PostRequest.post_request at 0x7f135dcda830>
+  child_exit: <function ChildExit.child_exit at 0x7f135dcda950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f135dcdaa70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f135dcdab90>
+  on_exit: <function OnExit.on_exit at 0x7f135dcdacb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-08 14:51:59 +0000] [19818] [INFO] Starting gunicorn 20.1.0
+[2023-06-08 14:51:59 +0000] [19818] [DEBUG] Arbiter booted
+[2023-06-08 14:51:59 +0000] [19818] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (19818)
+[2023-06-08 14:51:59 +0000] [19818] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-08 14:51:59 +0000] [19824] [INFO] Booting worker with pid: 19824
+[2023-06-08 14:51:59 +0000] [19825] [INFO] Booting worker with pid: 19825
+[2023-06-08 14:51:59 +0000] [19826] [INFO] Booting worker with pid: 19826
+[2023-06-08 14:51:59 +0000] [19827] [INFO] Booting worker with pid: 19827
+[2023-06-08 14:52:00 +0000] [19828] [INFO] Booting worker with pid: 19828
+[2023-06-08 14:52:00 +0000] [19818] [DEBUG] 5 workers
+[2023-06-08 14:52:01 +0000] [19825] [INFO] Started server process [19825]
+[2023-06-08 14:52:01 +0000] [19825] [INFO] Waiting for application startup.
+[2023-06-08 14:52:01 +0000] [19825] [INFO] Application startup complete.
+[2023-06-08 14:52:01 +0000] [19824] [INFO] Started server process [19824]
+[2023-06-08 14:52:01 +0000] [19824] [INFO] Waiting for application startup.
+[2023-06-08 14:52:01 +0000] [19824] [INFO] Application startup complete.
+[2023-06-08 14:52:01 +0000] [19826] [INFO] Started server process [19826]
+[2023-06-08 14:52:01 +0000] [19826] [INFO] Waiting for application startup.
+[2023-06-08 14:52:01 +0000] [19826] [INFO] Application startup complete.
+[2023-06-08 14:52:01 +0000] [19827] [INFO] Started server process [19827]
+[2023-06-08 14:52:01 +0000] [19827] [INFO] Waiting for application startup.
+[2023-06-08 14:52:01 +0000] [19827] [INFO] Application startup complete.
+[2023-06-08 14:52:01 +0000] [19828] [INFO] Started server process [19828]
+[2023-06-08 14:52:01 +0000] [19828] [INFO] Waiting for application startup.
+[2023-06-08 14:52:01 +0000] [19828] [INFO] Application startup complete.
+[2023-06-08 15:48:30 +0000] [19818] [INFO] Handling signal: term
+[2023-06-08 15:48:30 +0000] [19828] [INFO] Shutting down
+[2023-06-08 15:48:30 +0000] [19826] [INFO] Shutting down
+[2023-06-08 15:48:30 +0000] [19825] [INFO] Shutting down
+[2023-06-08 15:48:30 +0000] [19824] [INFO] Shutting down
+[2023-06-08 15:48:30 +0000] [19827] [INFO] Shutting down
+[2023-06-08 15:48:30 +0000] [19828] [INFO] Waiting for application shutdown.
+[2023-06-08 15:48:30 +0000] [19828] [INFO] Application shutdown complete.
+[2023-06-08 15:48:30 +0000] [19828] [INFO] Finished server process [19828]
+[2023-06-08 15:48:30 +0000] [19828] [INFO] Worker exiting (pid: 19828)
+[2023-06-08 15:48:30 +0000] [19826] [INFO] Waiting for application shutdown.
+[2023-06-08 15:48:30 +0000] [19825] [INFO] Waiting for application shutdown.
+[2023-06-08 15:48:30 +0000] [19826] [INFO] Application shutdown complete.
+[2023-06-08 15:48:30 +0000] [19825] [INFO] Application shutdown complete.
+[2023-06-08 15:48:30 +0000] [19825] [INFO] Finished server process [19825]
+[2023-06-08 15:48:30 +0000] [19826] [INFO] Finished server process [19826]
+[2023-06-08 15:48:30 +0000] [19824] [INFO] Waiting for application shutdown.
+[2023-06-08 15:48:30 +0000] [19827] [INFO] Waiting for application shutdown.
+[2023-06-08 15:48:30 +0000] [19824] [INFO] Application shutdown complete.
+[2023-06-08 15:48:30 +0000] [19824] [INFO] Finished server process [19824]
+[2023-06-08 15:48:30 +0000] [19827] [INFO] Application shutdown complete.
+[2023-06-08 15:48:30 +0000] [19827] [INFO] Finished server process [19827]
+[2023-06-08 15:48:30 +0000] [19825] [INFO] Worker exiting (pid: 19825)
+[2023-06-08 15:48:30 +0000] [19826] [INFO] Worker exiting (pid: 19826)
+[2023-06-08 15:48:30 +0000] [19824] [INFO] Worker exiting (pid: 19824)
+[2023-06-08 15:48:30 +0000] [19827] [INFO] Worker exiting (pid: 19827)
+[2023-06-08 15:48:31 +0000] [19818] [INFO] Shutting down: Master
+[2023-06-08 15:48:43 +0000] [20348] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f701e961d80>
+  on_reload: <function OnReload.on_reload at 0x7f701e961ea0>
+  when_ready: <function WhenReady.when_ready at 0x7f701e961fc0>
+  pre_fork: <function Prefork.pre_fork at 0x7f701e9620e0>
+  post_fork: <function Postfork.post_fork at 0x7f701e962200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f701e962320>
+  worker_int: <function WorkerInt.worker_int at 0x7f701e962440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f701e962560>
+  pre_exec: <function PreExec.pre_exec at 0x7f701e962680>
+  pre_request: <function PreRequest.pre_request at 0x7f701e9627a0>
+  post_request: <function PostRequest.post_request at 0x7f701e962830>
+  child_exit: <function ChildExit.child_exit at 0x7f701e962950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f701e962a70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f701e962b90>
+  on_exit: <function OnExit.on_exit at 0x7f701e962cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-08 15:48:43 +0000] [20348] [INFO] Starting gunicorn 20.1.0
+[2023-06-08 15:48:43 +0000] [20348] [DEBUG] Arbiter booted
+[2023-06-08 15:48:43 +0000] [20348] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (20348)
+[2023-06-08 15:48:43 +0000] [20348] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-08 15:48:43 +0000] [20354] [INFO] Booting worker with pid: 20354
+[2023-06-08 15:48:43 +0000] [20355] [INFO] Booting worker with pid: 20355
+[2023-06-08 15:48:44 +0000] [20356] [INFO] Booting worker with pid: 20356
+[2023-06-08 15:48:44 +0000] [20357] [INFO] Booting worker with pid: 20357
+[2023-06-08 15:48:44 +0000] [20358] [INFO] Booting worker with pid: 20358
+[2023-06-08 15:48:44 +0000] [20348] [DEBUG] 5 workers
+[2023-06-08 15:48:45 +0000] [20354] [INFO] Started server process [20354]
+[2023-06-08 15:48:45 +0000] [20354] [INFO] Waiting for application startup.
+[2023-06-08 15:48:45 +0000] [20354] [INFO] Application startup complete.
+[2023-06-08 15:48:45 +0000] [20355] [INFO] Started server process [20355]
+[2023-06-08 15:48:45 +0000] [20355] [INFO] Waiting for application startup.
+[2023-06-08 15:48:45 +0000] [20355] [INFO] Application startup complete.
+[2023-06-08 15:48:45 +0000] [20358] [INFO] Started server process [20358]
+[2023-06-08 15:48:45 +0000] [20358] [INFO] Waiting for application startup.
+[2023-06-08 15:48:45 +0000] [20358] [INFO] Application startup complete.
+[2023-06-08 15:48:45 +0000] [20356] [INFO] Started server process [20356]
+[2023-06-08 15:48:45 +0000] [20356] [INFO] Waiting for application startup.
+[2023-06-08 15:48:45 +0000] [20356] [INFO] Application startup complete.
+[2023-06-08 15:48:45 +0000] [20357] [INFO] Started server process [20357]
+[2023-06-08 15:48:45 +0000] [20357] [INFO] Waiting for application startup.
+[2023-06-08 15:48:45 +0000] [20357] [INFO] Application startup complete.
+[2023-06-08 15:49:24 +0000] [20348] [INFO] Handling signal: term
+[2023-06-08 15:49:24 +0000] [20357] [INFO] Shutting down
+[2023-06-08 15:49:24 +0000] [20356] [INFO] Shutting down
+[2023-06-08 15:49:25 +0000] [20354] [INFO] Shutting down
+[2023-06-08 15:49:25 +0000] [20358] [INFO] Shutting down
+[2023-06-08 15:49:25 +0000] [20355] [INFO] Shutting down
+[2023-06-08 15:49:25 +0000] [20357] [INFO] Waiting for application shutdown.
+[2023-06-08 15:49:25 +0000] [20356] [INFO] Waiting for application shutdown.
+[2023-06-08 15:49:25 +0000] [20357] [INFO] Application shutdown complete.
+[2023-06-08 15:49:25 +0000] [20356] [INFO] Application shutdown complete.
+[2023-06-08 15:49:25 +0000] [20357] [INFO] Finished server process [20357]
+[2023-06-08 15:49:25 +0000] [20356] [INFO] Finished server process [20356]
+[2023-06-08 15:49:25 +0000] [20357] [INFO] Worker exiting (pid: 20357)
+[2023-06-08 15:49:25 +0000] [20356] [INFO] Worker exiting (pid: 20356)
+[2023-06-08 15:49:25 +0000] [20354] [INFO] Waiting for application shutdown.
+[2023-06-08 15:49:25 +0000] [20354] [INFO] Application shutdown complete.
+[2023-06-08 15:49:25 +0000] [20354] [INFO] Finished server process [20354]
+[2023-06-08 15:49:25 +0000] [20354] [INFO] Worker exiting (pid: 20354)
+[2023-06-08 15:49:25 +0000] [20358] [INFO] Waiting for application shutdown.
+[2023-06-08 15:49:25 +0000] [20358] [INFO] Application shutdown complete.
+[2023-06-08 15:49:25 +0000] [20358] [INFO] Finished server process [20358]
+[2023-06-08 15:49:25 +0000] [20355] [INFO] Waiting for application shutdown.
+[2023-06-08 15:49:25 +0000] [20355] [INFO] Application shutdown complete.
+[2023-06-08 15:49:25 +0000] [20355] [INFO] Finished server process [20355]
+[2023-06-08 15:49:25 +0000] [20358] [INFO] Worker exiting (pid: 20358)
+[2023-06-08 15:49:25 +0000] [20355] [INFO] Worker exiting (pid: 20355)
+[2023-06-08 15:49:25 +0000] [20348] [INFO] Shutting down: Master
+[2023-06-08 15:51:57 +0000] [20561] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f3e6364dd80>
+  on_reload: <function OnReload.on_reload at 0x7f3e6364dea0>
+  when_ready: <function WhenReady.when_ready at 0x7f3e6364dfc0>
+  pre_fork: <function Prefork.pre_fork at 0x7f3e6364e0e0>
+  post_fork: <function Postfork.post_fork at 0x7f3e6364e200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f3e6364e320>
+  worker_int: <function WorkerInt.worker_int at 0x7f3e6364e440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f3e6364e560>
+  pre_exec: <function PreExec.pre_exec at 0x7f3e6364e680>
+  pre_request: <function PreRequest.pre_request at 0x7f3e6364e7a0>
+  post_request: <function PostRequest.post_request at 0x7f3e6364e830>
+  child_exit: <function ChildExit.child_exit at 0x7f3e6364e950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f3e6364ea70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f3e6364eb90>
+  on_exit: <function OnExit.on_exit at 0x7f3e6364ecb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-08 15:51:57 +0000] [20561] [INFO] Starting gunicorn 20.1.0
+[2023-06-08 15:51:57 +0000] [20561] [DEBUG] Arbiter booted
+[2023-06-08 15:51:57 +0000] [20561] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (20561)
+[2023-06-08 15:51:57 +0000] [20561] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-08 15:51:57 +0000] [20562] [INFO] Booting worker with pid: 20562
+[2023-06-08 15:51:58 +0000] [20563] [INFO] Booting worker with pid: 20563
+[2023-06-08 15:51:58 +0000] [20564] [INFO] Booting worker with pid: 20564
+[2023-06-08 15:51:58 +0000] [20565] [INFO] Booting worker with pid: 20565
+[2023-06-08 15:51:58 +0000] [20566] [INFO] Booting worker with pid: 20566
+[2023-06-08 15:51:58 +0000] [20561] [DEBUG] 5 workers
+[2023-06-08 15:51:59 +0000] [20564] [INFO] Started server process [20564]
+[2023-06-08 15:51:59 +0000] [20564] [INFO] Waiting for application startup.
+[2023-06-08 15:51:59 +0000] [20564] [INFO] Application startup complete.
+[2023-06-08 15:51:59 +0000] [20562] [INFO] Started server process [20562]
+[2023-06-08 15:51:59 +0000] [20562] [INFO] Waiting for application startup.
+[2023-06-08 15:51:59 +0000] [20562] [INFO] Application startup complete.
+[2023-06-08 15:51:59 +0000] [20566] [INFO] Started server process [20566]
+[2023-06-08 15:51:59 +0000] [20566] [INFO] Waiting for application startup.
+[2023-06-08 15:51:59 +0000] [20566] [INFO] Application startup complete.
+[2023-06-08 15:51:59 +0000] [20565] [INFO] Started server process [20565]
+[2023-06-08 15:51:59 +0000] [20565] [INFO] Waiting for application startup.
+[2023-06-08 15:51:59 +0000] [20565] [INFO] Application startup complete.
+[2023-06-08 15:51:59 +0000] [20563] [INFO] Started server process [20563]
+[2023-06-08 15:51:59 +0000] [20563] [INFO] Waiting for application startup.
+[2023-06-08 15:51:59 +0000] [20563] [INFO] Application startup complete.
+[2023-06-08 15:52:10 +0000] [20561] [INFO] Handling signal: winch
+[2023-06-08 15:52:10 +0000] [20561] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-06-08 15:52:10 +0000] [20561] [INFO] Handling signal: winch
+[2023-06-08 15:52:10 +0000] [20561] [DEBUG] SIGWINCH ignored. Not daemonized
+[2023-06-08 15:52:38 +0000] [20561] [INFO] Handling signal: int
+[2023-06-08 15:52:38 +0000] [20562] [INFO] Shutting down
+[2023-06-08 15:52:38 +0000] [20564] [INFO] Shutting down
+[2023-06-08 15:52:38 +0000] [20565] [INFO] Shutting down
+[2023-06-08 15:52:38 +0000] [20563] [INFO] Shutting down
+[2023-06-08 15:52:38 +0000] [20566] [INFO] Shutting down
+[2023-06-08 15:52:38 +0000] [20564] [INFO] Waiting for application shutdown.
+[2023-06-08 15:52:38 +0000] [20562] [INFO] Waiting for application shutdown.
+[2023-06-08 15:52:38 +0000] [20564] [INFO] Application shutdown complete.
+[2023-06-08 15:52:38 +0000] [20562] [INFO] Application shutdown complete.
+[2023-06-08 15:52:38 +0000] [20564] [INFO] Finished server process [20564]
+[2023-06-08 15:52:38 +0000] [20562] [INFO] Finished server process [20562]
+[2023-06-08 15:52:38 +0000] [20564] [INFO] Worker exiting (pid: 20564)
+[2023-06-08 15:52:38 +0000] [20562] [INFO] Worker exiting (pid: 20562)
+[2023-06-08 15:52:38 +0000] [20565] [INFO] Waiting for application shutdown.
+[2023-06-08 15:52:38 +0000] [20565] [INFO] Application shutdown complete.
+[2023-06-08 15:52:38 +0000] [20565] [INFO] Finished server process [20565]
+[2023-06-08 15:52:38 +0000] [20565] [INFO] Worker exiting (pid: 20565)
+[2023-06-08 15:52:38 +0000] [20563] [INFO] Waiting for application shutdown.
+[2023-06-08 15:52:38 +0000] [20563] [INFO] Application shutdown complete.
+[2023-06-08 15:52:38 +0000] [20563] [INFO] Finished server process [20563]
+[2023-06-08 15:52:38 +0000] [20563] [INFO] Worker exiting (pid: 20563)
+[2023-06-08 15:52:38 +0000] [20566] [INFO] Waiting for application shutdown.
+[2023-06-08 15:52:38 +0000] [20566] [INFO] Application shutdown complete.
+[2023-06-08 15:52:38 +0000] [20566] [INFO] Finished server process [20566]
+[2023-06-08 15:52:38 +0000] [20566] [INFO] Worker exiting (pid: 20566)
+[2023-06-08 15:52:39 +0000] [20561] [INFO] Shutting down: Master
+[2023-06-08 15:54:54 +0000] [26367] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f1556445e10>
+  on_reload: <function OnReload.on_reload at 0x7f1556445f30>
+  when_ready: <function WhenReady.when_ready at 0x7f1556446050>
+  pre_fork: <function Prefork.pre_fork at 0x7f1556446170>
+  post_fork: <function Postfork.post_fork at 0x7f1556446290>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f15564463b0>
+  worker_int: <function WorkerInt.worker_int at 0x7f15564464d0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f15564465f0>
+  pre_exec: <function PreExec.pre_exec at 0x7f1556446710>
+  pre_request: <function PreRequest.pre_request at 0x7f1556446830>
+  post_request: <function PostRequest.post_request at 0x7f15564468c0>
+  child_exit: <function ChildExit.child_exit at 0x7f15564469e0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f1556446b00>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f1556446c20>
+  on_exit: <function OnExit.on_exit at 0x7f1556446d40>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-08 15:54:54 +0000] [26367] [INFO] Starting gunicorn 20.1.0
+[2023-06-08 15:54:54 +0000] [26367] [DEBUG] Arbiter booted
+[2023-06-08 15:54:54 +0000] [26367] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (26367)
+[2023-06-08 15:54:54 +0000] [26367] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-08 15:54:54 +0000] [26368] [INFO] Booting worker with pid: 26368
+[2023-06-08 15:54:54 +0000] [26369] [INFO] Booting worker with pid: 26369
+[2023-06-08 15:54:54 +0000] [26370] [INFO] Booting worker with pid: 26370
+[2023-06-08 15:54:54 +0000] [26371] [INFO] Booting worker with pid: 26371
+[2023-06-08 15:54:54 +0000] [26372] [INFO] Booting worker with pid: 26372
+[2023-06-08 15:54:55 +0000] [26367] [DEBUG] 5 workers
+[2023-06-08 15:54:56 +0000] [26368] [INFO] Started server process [26368]
+[2023-06-08 15:54:56 +0000] [26368] [INFO] Waiting for application startup.
+[2023-06-08 15:54:56 +0000] [26368] [INFO] Application startup complete.
+[2023-06-08 15:54:56 +0000] [26370] [INFO] Started server process [26370]
+[2023-06-08 15:54:56 +0000] [26370] [INFO] Waiting for application startup.
+[2023-06-08 15:54:56 +0000] [26370] [INFO] Application startup complete.
+[2023-06-08 15:54:56 +0000] [26369] [INFO] Started server process [26369]
+[2023-06-08 15:54:56 +0000] [26369] [INFO] Waiting for application startup.
+[2023-06-08 15:54:56 +0000] [26369] [INFO] Application startup complete.
+[2023-06-08 15:54:56 +0000] [26372] [INFO] Started server process [26372]
+[2023-06-08 15:54:56 +0000] [26372] [INFO] Waiting for application startup.
+[2023-06-08 15:54:56 +0000] [26372] [INFO] Application startup complete.
+[2023-06-08 15:54:56 +0000] [26371] [INFO] Started server process [26371]
+[2023-06-08 15:54:56 +0000] [26371] [INFO] Waiting for application startup.
+[2023-06-08 15:54:56 +0000] [26371] [INFO] Application startup complete.
+[2023-06-08 15:54:57 +0000] [26367] [INFO] Handling signal: int
+[2023-06-08 15:54:57 +0000] [26372] [INFO] Shutting down
+[2023-06-08 15:54:57 +0000] [26371] [INFO] Shutting down
+[2023-06-08 15:54:57 +0000] [26368] [INFO] Shutting down
+[2023-06-08 15:54:57 +0000] [26370] [INFO] Shutting down
+[2023-06-08 15:54:57 +0000] [26369] [INFO] Shutting down
+[2023-06-08 15:54:57 +0000] [26372] [INFO] Waiting for application shutdown.
+[2023-06-08 15:54:57 +0000] [26372] [INFO] Application shutdown complete.
+[2023-06-08 15:54:57 +0000] [26372] [INFO] Finished server process [26372]
+[2023-06-08 15:54:57 +0000] [26372] [INFO] Worker exiting (pid: 26372)
+[2023-06-08 15:54:58 +0000] [26371] [INFO] Waiting for application shutdown.
+[2023-06-08 15:54:58 +0000] [26371] [INFO] Application shutdown complete.
+[2023-06-08 15:54:58 +0000] [26371] [INFO] Finished server process [26371]
+[2023-06-08 15:54:58 +0000] [26371] [INFO] Worker exiting (pid: 26371)
+[2023-06-08 15:54:58 +0000] [26368] [INFO] Waiting for application shutdown.
+[2023-06-08 15:54:58 +0000] [26368] [INFO] Application shutdown complete.
+[2023-06-08 15:54:58 +0000] [26368] [INFO] Finished server process [26368]
+[2023-06-08 15:54:58 +0000] [26368] [INFO] Worker exiting (pid: 26368)
+[2023-06-08 15:54:58 +0000] [26370] [INFO] Waiting for application shutdown.
+[2023-06-08 15:54:58 +0000] [26370] [INFO] Application shutdown complete.
+[2023-06-08 15:54:58 +0000] [26370] [INFO] Finished server process [26370]
+[2023-06-08 15:54:58 +0000] [26370] [INFO] Worker exiting (pid: 26370)
+[2023-06-08 15:54:58 +0000] [26369] [INFO] Waiting for application shutdown.
+[2023-06-08 15:54:58 +0000] [26369] [INFO] Application shutdown complete.
+[2023-06-08 15:54:58 +0000] [26369] [INFO] Finished server process [26369]
+[2023-06-08 15:54:58 +0000] [26369] [INFO] Worker exiting (pid: 26369)
+[2023-06-08 15:54:58 +0000] [26367] [INFO] Shutting down: Master
+[2023-06-08 16:00:19 +0000] [27092] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fe68eba5e10>
+  on_reload: <function OnReload.on_reload at 0x7fe68eba5f30>
+  when_ready: <function WhenReady.when_ready at 0x7fe68eba6050>
+  pre_fork: <function Prefork.pre_fork at 0x7fe68eba6170>
+  post_fork: <function Postfork.post_fork at 0x7fe68eba6290>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe68eba63b0>
+  worker_int: <function WorkerInt.worker_int at 0x7fe68eba64d0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe68eba65f0>
+  pre_exec: <function PreExec.pre_exec at 0x7fe68eba6710>
+  pre_request: <function PreRequest.pre_request at 0x7fe68eba6830>
+  post_request: <function PostRequest.post_request at 0x7fe68eba68c0>
+  child_exit: <function ChildExit.child_exit at 0x7fe68eba69e0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe68eba6b00>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe68eba6c20>
+  on_exit: <function OnExit.on_exit at 0x7fe68eba6d40>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-08 16:00:19 +0000] [27092] [INFO] Starting gunicorn 20.1.0
+[2023-06-08 16:00:19 +0000] [27092] [DEBUG] Arbiter booted
+[2023-06-08 16:00:19 +0000] [27092] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (27092)
+[2023-06-08 16:00:19 +0000] [27092] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-08 16:00:19 +0000] [27093] [INFO] Booting worker with pid: 27093
+[2023-06-08 16:00:19 +0000] [27094] [INFO] Booting worker with pid: 27094
+[2023-06-08 16:00:20 +0000] [27095] [INFO] Booting worker with pid: 27095
+[2023-06-08 16:00:20 +0000] [27096] [INFO] Booting worker with pid: 27096
+[2023-06-08 16:00:20 +0000] [27097] [INFO] Booting worker with pid: 27097
+[2023-06-08 16:00:20 +0000] [27092] [DEBUG] 5 workers
+[2023-06-08 16:00:21 +0000] [27094] [INFO] Started server process [27094]
+[2023-06-08 16:00:21 +0000] [27094] [INFO] Waiting for application startup.
+[2023-06-08 16:00:21 +0000] [27094] [INFO] Application startup complete.
+[2023-06-08 16:00:21 +0000] [27093] [INFO] Started server process [27093]
+[2023-06-08 16:00:21 +0000] [27093] [INFO] Waiting for application startup.
+[2023-06-08 16:00:21 +0000] [27093] [INFO] Application startup complete.
+[2023-06-08 16:00:21 +0000] [27095] [INFO] Started server process [27095]
+[2023-06-08 16:00:21 +0000] [27095] [INFO] Waiting for application startup.
+[2023-06-08 16:00:21 +0000] [27095] [INFO] Application startup complete.
+[2023-06-08 16:00:21 +0000] [27096] [INFO] Started server process [27096]
+[2023-06-08 16:00:21 +0000] [27096] [INFO] Waiting for application startup.
+[2023-06-08 16:00:21 +0000] [27096] [INFO] Application startup complete.
+[2023-06-08 16:00:21 +0000] [27097] [INFO] Started server process [27097]
+[2023-06-08 16:00:21 +0000] [27097] [INFO] Waiting for application startup.
+[2023-06-08 16:00:21 +0000] [27097] [INFO] Application startup complete.
+[2023-06-08 16:01:06 +0000] [27092] [INFO] Handling signal: int
+[2023-06-08 16:01:06 +0000] [27094] [INFO] Shutting down
+[2023-06-08 16:01:06 +0000] [27093] [INFO] Shutting down
+[2023-06-08 16:01:06 +0000] [27096] [INFO] Shutting down
+[2023-06-08 16:01:06 +0000] [27097] [INFO] Shutting down
+[2023-06-08 16:01:06 +0000] [27095] [INFO] Shutting down
+[2023-06-08 16:01:06 +0000] [27094] [INFO] Waiting for application shutdown.
+[2023-06-08 16:01:06 +0000] [27093] [INFO] Waiting for application shutdown.
+[2023-06-08 16:01:06 +0000] [27094] [INFO] Application shutdown complete.
+[2023-06-08 16:01:06 +0000] [27096] [INFO] Waiting for application shutdown.
+[2023-06-08 16:01:06 +0000] [27094] [INFO] Finished server process [27094]
+[2023-06-08 16:01:06 +0000] [27093] [INFO] Application shutdown complete.
+[2023-06-08 16:01:06 +0000] [27093] [INFO] Finished server process [27093]
+[2023-06-08 16:01:06 +0000] [27096] [INFO] Application shutdown complete.
+[2023-06-08 16:01:06 +0000] [27096] [INFO] Finished server process [27096]
+[2023-06-08 16:01:06 +0000] [27094] [INFO] Worker exiting (pid: 27094)
+[2023-06-08 16:01:06 +0000] [27093] [INFO] Worker exiting (pid: 27093)
+[2023-06-08 16:01:06 +0000] [27096] [INFO] Worker exiting (pid: 27096)
+[2023-06-08 16:01:06 +0000] [27095] [INFO] Waiting for application shutdown.
+[2023-06-08 16:01:06 +0000] [27097] [INFO] Waiting for application shutdown.
+[2023-06-08 16:01:06 +0000] [27095] [INFO] Application shutdown complete.
+[2023-06-08 16:01:06 +0000] [27097] [INFO] Application shutdown complete.
+[2023-06-08 16:01:06 +0000] [27095] [INFO] Finished server process [27095]
+[2023-06-08 16:01:06 +0000] [27097] [INFO] Finished server process [27097]
+[2023-06-08 16:01:06 +0000] [27095] [INFO] Worker exiting (pid: 27095)
+[2023-06-08 16:01:06 +0000] [27097] [INFO] Worker exiting (pid: 27097)
+[2023-06-08 16:01:07 +0000] [27092] [WARNING] Worker with pid 27093 was terminated due to signal 2
+[2023-06-08 16:01:07 +0000] [27092] [WARNING] Worker with pid 27097 was terminated due to signal 2
+[2023-06-08 16:01:07 +0000] [27092] [WARNING] Worker with pid 27094 was terminated due to signal 2
+[2023-06-08 16:01:07 +0000] [27092] [WARNING] Worker with pid 27096 was terminated due to signal 2
+[2023-06-08 16:01:07 +0000] [27092] [WARNING] Worker with pid 27095 was terminated due to signal 2
+[2023-06-08 16:01:07 +0000] [27092] [INFO] Shutting down: Master
+[2023-06-08 16:02:08 +0000] [27167] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fdc0081dd80>
+  on_reload: <function OnReload.on_reload at 0x7fdc0081dea0>
+  when_ready: <function WhenReady.when_ready at 0x7fdc0081dfc0>
+  pre_fork: <function Prefork.pre_fork at 0x7fdc0081e0e0>
+  post_fork: <function Postfork.post_fork at 0x7fdc0081e200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fdc0081e320>
+  worker_int: <function WorkerInt.worker_int at 0x7fdc0081e440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fdc0081e560>
+  pre_exec: <function PreExec.pre_exec at 0x7fdc0081e680>
+  pre_request: <function PreRequest.pre_request at 0x7fdc0081e7a0>
+  post_request: <function PostRequest.post_request at 0x7fdc0081e830>
+  child_exit: <function ChildExit.child_exit at 0x7fdc0081e950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fdc0081ea70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fdc0081eb90>
+  on_exit: <function OnExit.on_exit at 0x7fdc0081ecb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-08 16:02:08 +0000] [27167] [INFO] Starting gunicorn 20.1.0
+[2023-06-08 16:02:08 +0000] [27167] [DEBUG] Arbiter booted
+[2023-06-08 16:02:08 +0000] [27167] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (27167)
+[2023-06-08 16:02:08 +0000] [27167] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-08 16:02:08 +0000] [27173] [INFO] Booting worker with pid: 27173
+[2023-06-08 16:02:08 +0000] [27174] [INFO] Booting worker with pid: 27174
+[2023-06-08 16:02:08 +0000] [27175] [INFO] Booting worker with pid: 27175
+[2023-06-08 16:02:08 +0000] [27176] [INFO] Booting worker with pid: 27176
+[2023-06-08 16:02:08 +0000] [27167] [DEBUG] 4 workers
+[2023-06-08 16:02:09 +0000] [27173] [INFO] Started server process [27173]
+[2023-06-08 16:02:09 +0000] [27173] [INFO] Waiting for application startup.
+[2023-06-08 16:02:09 +0000] [27173] [INFO] Application startup complete.
+[2023-06-08 16:02:09 +0000] [27174] [INFO] Started server process [27174]
+[2023-06-08 16:02:09 +0000] [27174] [INFO] Waiting for application startup.
+[2023-06-08 16:02:09 +0000] [27174] [INFO] Application startup complete.
+[2023-06-08 16:02:09 +0000] [27175] [INFO] Started server process [27175]
+[2023-06-08 16:02:09 +0000] [27175] [INFO] Waiting for application startup.
+[2023-06-08 16:02:09 +0000] [27175] [INFO] Application startup complete.
+[2023-06-08 16:02:09 +0000] [27176] [INFO] Started server process [27176]
+[2023-06-08 16:02:09 +0000] [27176] [INFO] Waiting for application startup.
+[2023-06-08 16:02:09 +0000] [27176] [INFO] Application startup complete.
+[2023-06-08 16:03:02 +0000] [27167] [INFO] Handling signal: term
+[2023-06-08 16:03:02 +0000] [27174] [INFO] Shutting down
+[2023-06-08 16:03:02 +0000] [27175] [INFO] Shutting down
+[2023-06-08 16:03:02 +0000] [27176] [INFO] Shutting down
+[2023-06-08 16:03:02 +0000] [27173] [INFO] Shutting down
+[2023-06-08 16:03:02 +0000] [27174] [INFO] Waiting for application shutdown.
+[2023-06-08 16:03:02 +0000] [27175] [INFO] Waiting for application shutdown.
+[2023-06-08 16:03:02 +0000] [27174] [INFO] Application shutdown complete.
+[2023-06-08 16:03:02 +0000] [27175] [INFO] Application shutdown complete.
+[2023-06-08 16:03:02 +0000] [27174] [INFO] Finished server process [27174]
+[2023-06-08 16:03:02 +0000] [27175] [INFO] Finished server process [27175]
+[2023-06-08 16:03:02 +0000] [27174] [INFO] Worker exiting (pid: 27174)
+[2023-06-08 16:03:02 +0000] [27175] [INFO] Worker exiting (pid: 27175)
+[2023-06-08 16:03:02 +0000] [27176] [INFO] Waiting for application shutdown.
+[2023-06-08 16:03:02 +0000] [27173] [INFO] Waiting for application shutdown.
+[2023-06-08 16:03:02 +0000] [27176] [INFO] Application shutdown complete.
+[2023-06-08 16:03:02 +0000] [27173] [INFO] Application shutdown complete.
+[2023-06-08 16:03:02 +0000] [27176] [INFO] Finished server process [27176]
+[2023-06-08 16:03:02 +0000] [27173] [INFO] Finished server process [27173]
+[2023-06-08 16:03:02 +0000] [27173] [INFO] Worker exiting (pid: 27173)
+[2023-06-08 16:03:02 +0000] [27176] [INFO] Worker exiting (pid: 27176)
+[2023-06-08 16:03:03 +0000] [27167] [INFO] Shutting down: Master
+[2023-06-08 16:03:03 +0000] [27273] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f470ed81d80>
+  on_reload: <function OnReload.on_reload at 0x7f470ed81ea0>
+  when_ready: <function WhenReady.when_ready at 0x7f470ed81fc0>
+  pre_fork: <function Prefork.pre_fork at 0x7f470ed820e0>
+  post_fork: <function Postfork.post_fork at 0x7f470ed82200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f470ed82320>
+  worker_int: <function WorkerInt.worker_int at 0x7f470ed82440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f470ed82560>
+  pre_exec: <function PreExec.pre_exec at 0x7f470ed82680>
+  pre_request: <function PreRequest.pre_request at 0x7f470ed827a0>
+  post_request: <function PostRequest.post_request at 0x7f470ed82830>
+  child_exit: <function ChildExit.child_exit at 0x7f470ed82950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f470ed82a70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f470ed82b90>
+  on_exit: <function OnExit.on_exit at 0x7f470ed82cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-08 16:03:03 +0000] [27273] [INFO] Starting gunicorn 20.1.0
+[2023-06-08 16:03:03 +0000] [27273] [DEBUG] Arbiter booted
+[2023-06-08 16:03:03 +0000] [27273] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (27273)
+[2023-06-08 16:03:03 +0000] [27273] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-08 16:03:03 +0000] [27280] [INFO] Booting worker with pid: 27280
+[2023-06-08 16:03:03 +0000] [27281] [INFO] Booting worker with pid: 27281
+[2023-06-08 16:03:03 +0000] [27282] [INFO] Booting worker with pid: 27282
+[2023-06-08 16:03:03 +0000] [27283] [INFO] Booting worker with pid: 27283
+[2023-06-08 16:03:03 +0000] [27273] [DEBUG] 4 workers
+[2023-06-08 16:03:04 +0000] [27280] [INFO] Started server process [27280]
+[2023-06-08 16:03:04 +0000] [27280] [INFO] Waiting for application startup.
+[2023-06-08 16:03:04 +0000] [27280] [INFO] Application startup complete.
+[2023-06-08 16:03:04 +0000] [27281] [INFO] Started server process [27281]
+[2023-06-08 16:03:04 +0000] [27281] [INFO] Waiting for application startup.
+[2023-06-08 16:03:04 +0000] [27281] [INFO] Application startup complete.
+[2023-06-08 16:03:04 +0000] [27282] [INFO] Started server process [27282]
+[2023-06-08 16:03:04 +0000] [27282] [INFO] Waiting for application startup.
+[2023-06-08 16:03:04 +0000] [27282] [INFO] Application startup complete.
+[2023-06-08 16:03:04 +0000] [27283] [INFO] Started server process [27283]
+[2023-06-08 16:03:04 +0000] [27283] [INFO] Waiting for application startup.
+[2023-06-08 16:03:04 +0000] [27283] [INFO] Application startup complete.
+[2023-06-14 14:04:42 +0000] [27273] [INFO] Handling signal: term
+[2023-06-14 14:04:42 +0000] [27280] [INFO] Shutting down
+[2023-06-14 14:04:42 +0000] [27281] [INFO] Shutting down
+[2023-06-14 14:04:42 +0000] [27283] [INFO] Shutting down
+[2023-06-14 14:04:42 +0000] [27282] [INFO] Shutting down
+[2023-06-14 14:04:42 +0000] [27280] [INFO] Waiting for application shutdown.
+[2023-06-14 14:04:42 +0000] [27281] [INFO] Waiting for application shutdown.
+[2023-06-14 14:04:42 +0000] [27283] [INFO] Waiting for application shutdown.
+[2023-06-14 14:04:42 +0000] [27282] [INFO] Waiting for application shutdown.
+[2023-06-14 14:04:42 +0000] [27281] [INFO] Application shutdown complete.
+[2023-06-14 14:04:42 +0000] [27280] [INFO] Application shutdown complete.
+[2023-06-14 14:04:42 +0000] [27282] [INFO] Application shutdown complete.
+[2023-06-14 14:04:42 +0000] [27283] [INFO] Application shutdown complete.
+[2023-06-14 14:04:42 +0000] [27280] [INFO] Finished server process [27280]
+[2023-06-14 14:04:42 +0000] [27281] [INFO] Finished server process [27281]
+[2023-06-14 14:04:42 +0000] [27282] [INFO] Finished server process [27282]
+[2023-06-14 14:04:42 +0000] [27283] [INFO] Finished server process [27283]
+[2023-06-14 14:04:42 +0000] [27283] [INFO] Worker exiting (pid: 27283)
+[2023-06-14 14:04:42 +0000] [27282] [INFO] Worker exiting (pid: 27282)
+[2023-06-14 14:04:42 +0000] [27281] [INFO] Worker exiting (pid: 27281)
+[2023-06-14 14:04:42 +0000] [27280] [INFO] Worker exiting (pid: 27280)
+[2023-06-14 14:04:43 +0000] [27273] [INFO] Shutting down: Master
+[2023-06-14 14:04:43 +0000] [61111] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f45f4251d80>
+  on_reload: <function OnReload.on_reload at 0x7f45f4251ea0>
+  when_ready: <function WhenReady.when_ready at 0x7f45f4251fc0>
+  pre_fork: <function Prefork.pre_fork at 0x7f45f42520e0>
+  post_fork: <function Postfork.post_fork at 0x7f45f4252200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f45f4252320>
+  worker_int: <function WorkerInt.worker_int at 0x7f45f4252440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f45f4252560>
+  pre_exec: <function PreExec.pre_exec at 0x7f45f4252680>
+  pre_request: <function PreRequest.pre_request at 0x7f45f42527a0>
+  post_request: <function PostRequest.post_request at 0x7f45f4252830>
+  child_exit: <function ChildExit.child_exit at 0x7f45f4252950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f45f4252a70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f45f4252b90>
+  on_exit: <function OnExit.on_exit at 0x7f45f4252cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-14 14:04:43 +0000] [61111] [INFO] Starting gunicorn 20.1.0
+[2023-06-14 14:04:43 +0000] [61111] [DEBUG] Arbiter booted
+[2023-06-14 14:04:43 +0000] [61111] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (61111)
+[2023-06-14 14:04:43 +0000] [61111] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-14 14:04:43 +0000] [61118] [INFO] Booting worker with pid: 61118
+[2023-06-14 14:04:43 +0000] [61119] [INFO] Booting worker with pid: 61119
+[2023-06-14 14:04:43 +0000] [61120] [INFO] Booting worker with pid: 61120
+[2023-06-14 14:04:44 +0000] [61121] [INFO] Booting worker with pid: 61121
+[2023-06-14 14:04:44 +0000] [61111] [DEBUG] 4 workers
+[2023-06-14 14:04:45 +0000] [61119] [INFO] Started server process [61119]
+[2023-06-14 14:04:45 +0000] [61119] [INFO] Waiting for application startup.
+[2023-06-14 14:04:45 +0000] [61119] [INFO] Application startup complete.
+[2023-06-14 14:04:45 +0000] [61118] [INFO] Started server process [61118]
+[2023-06-14 14:04:45 +0000] [61118] [INFO] Waiting for application startup.
+[2023-06-14 14:04:45 +0000] [61118] [INFO] Application startup complete.
+[2023-06-14 14:04:45 +0000] [61120] [INFO] Started server process [61120]
+[2023-06-14 14:04:45 +0000] [61120] [INFO] Waiting for application startup.
+[2023-06-14 14:04:45 +0000] [61120] [INFO] Application startup complete.
+[2023-06-14 14:04:45 +0000] [61121] [INFO] Started server process [61121]
+[2023-06-14 14:04:45 +0000] [61121] [INFO] Waiting for application startup.
+[2023-06-14 14:04:45 +0000] [61121] [INFO] Application startup complete.
+[2023-06-14 15:34:37 +0000] [61111] [INFO] Handling signal: term
+[2023-06-14 15:34:37 +0000] [61121] [INFO] Shutting down
+[2023-06-14 15:34:37 +0000] [61120] [INFO] Shutting down
+[2023-06-14 15:34:37 +0000] [61118] [INFO] Shutting down
+[2023-06-14 15:34:37 +0000] [61119] [INFO] Shutting down
+[2023-06-14 15:34:38 +0000] [61121] [INFO] Waiting for application shutdown.
+[2023-06-14 15:34:38 +0000] [61120] [INFO] Waiting for application shutdown.
+[2023-06-14 15:34:38 +0000] [61118] [INFO] Waiting for application shutdown.
+[2023-06-14 15:34:38 +0000] [61121] [INFO] Application shutdown complete.
+[2023-06-14 15:34:38 +0000] [61119] [INFO] Waiting for application shutdown.
+[2023-06-14 15:34:38 +0000] [61120] [INFO] Application shutdown complete.
+[2023-06-14 15:34:38 +0000] [61121] [INFO] Finished server process [61121]
+[2023-06-14 15:34:38 +0000] [61118] [INFO] Application shutdown complete.
+[2023-06-14 15:34:38 +0000] [61120] [INFO] Finished server process [61120]
+[2023-06-14 15:34:38 +0000] [61119] [INFO] Application shutdown complete.
+[2023-06-14 15:34:38 +0000] [61118] [INFO] Finished server process [61118]
+[2023-06-14 15:34:38 +0000] [61119] [INFO] Finished server process [61119]
+[2023-06-14 15:34:38 +0000] [61120] [INFO] Worker exiting (pid: 61120)
+[2023-06-14 15:34:38 +0000] [61118] [INFO] Worker exiting (pid: 61118)
+[2023-06-14 15:34:38 +0000] [61121] [INFO] Worker exiting (pid: 61121)
+[2023-06-14 15:34:38 +0000] [61119] [INFO] Worker exiting (pid: 61119)
+[2023-06-14 15:34:38 +0000] [61111] [INFO] Shutting down: Master
+[2023-06-14 15:34:39 +0000] [63620] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2309651d80>
+  on_reload: <function OnReload.on_reload at 0x7f2309651ea0>
+  when_ready: <function WhenReady.when_ready at 0x7f2309651fc0>
+  pre_fork: <function Prefork.pre_fork at 0x7f23096520e0>
+  post_fork: <function Postfork.post_fork at 0x7f2309652200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2309652320>
+  worker_int: <function WorkerInt.worker_int at 0x7f2309652440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2309652560>
+  pre_exec: <function PreExec.pre_exec at 0x7f2309652680>
+  pre_request: <function PreRequest.pre_request at 0x7f23096527a0>
+  post_request: <function PostRequest.post_request at 0x7f2309652830>
+  child_exit: <function ChildExit.child_exit at 0x7f2309652950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2309652a70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2309652b90>
+  on_exit: <function OnExit.on_exit at 0x7f2309652cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-14 15:34:39 +0000] [63620] [INFO] Starting gunicorn 20.1.0
+[2023-06-14 15:34:39 +0000] [63620] [DEBUG] Arbiter booted
+[2023-06-14 15:34:39 +0000] [63620] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (63620)
+[2023-06-14 15:34:39 +0000] [63620] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-14 15:34:39 +0000] [63626] [INFO] Booting worker with pid: 63626
+[2023-06-14 15:34:39 +0000] [63627] [INFO] Booting worker with pid: 63627
+[2023-06-14 15:34:39 +0000] [63628] [INFO] Booting worker with pid: 63628
+[2023-06-14 15:34:39 +0000] [63629] [INFO] Booting worker with pid: 63629
+[2023-06-14 15:34:39 +0000] [63620] [DEBUG] 4 workers
+[2023-06-14 15:34:40 +0000] [63626] [INFO] Started server process [63626]
+[2023-06-14 15:34:40 +0000] [63626] [INFO] Waiting for application startup.
+[2023-06-14 15:34:40 +0000] [63626] [INFO] Application startup complete.
+[2023-06-14 15:34:40 +0000] [63627] [INFO] Started server process [63627]
+[2023-06-14 15:34:40 +0000] [63627] [INFO] Waiting for application startup.
+[2023-06-14 15:34:40 +0000] [63627] [INFO] Application startup complete.
+[2023-06-14 15:34:40 +0000] [63628] [INFO] Started server process [63628]
+[2023-06-14 15:34:40 +0000] [63628] [INFO] Waiting for application startup.
+[2023-06-14 15:34:40 +0000] [63628] [INFO] Application startup complete.
+[2023-06-14 15:34:40 +0000] [63629] [INFO] Started server process [63629]
+[2023-06-14 15:34:40 +0000] [63629] [INFO] Waiting for application startup.
+[2023-06-14 15:34:40 +0000] [63629] [INFO] Application startup complete.
+[2023-06-14 15:35:07 +0000] [63620] [INFO] Handling signal: term
+[2023-06-14 15:35:07 +0000] [63629] [INFO] Shutting down
+[2023-06-14 15:35:07 +0000] [63627] [INFO] Shutting down
+[2023-06-14 15:35:07 +0000] [63626] [INFO] Shutting down
+[2023-06-14 15:35:07 +0000] [63628] [INFO] Shutting down
+[2023-06-14 15:35:07 +0000] [63629] [INFO] Waiting for application shutdown.
+[2023-06-14 15:35:07 +0000] [63629] [INFO] Application shutdown complete.
+[2023-06-14 15:35:07 +0000] [63629] [INFO] Finished server process [63629]
+[2023-06-14 15:35:07 +0000] [63629] [INFO] Worker exiting (pid: 63629)
+[2023-06-14 15:35:07 +0000] [63627] [INFO] Waiting for application shutdown.
+[2023-06-14 15:35:07 +0000] [63627] [INFO] Application shutdown complete.
+[2023-06-14 15:35:07 +0000] [63627] [INFO] Finished server process [63627]
+[2023-06-14 15:35:07 +0000] [63627] [INFO] Worker exiting (pid: 63627)
+[2023-06-14 15:35:07 +0000] [63626] [INFO] Waiting for application shutdown.
+[2023-06-14 15:35:07 +0000] [63626] [INFO] Application shutdown complete.
+[2023-06-14 15:35:07 +0000] [63626] [INFO] Finished server process [63626]
+[2023-06-14 15:35:07 +0000] [63626] [INFO] Worker exiting (pid: 63626)
+[2023-06-14 15:35:07 +0000] [63628] [INFO] Waiting for application shutdown.
+[2023-06-14 15:35:07 +0000] [63628] [INFO] Application shutdown complete.
+[2023-06-14 15:35:07 +0000] [63628] [INFO] Finished server process [63628]
+[2023-06-14 15:35:07 +0000] [63628] [INFO] Worker exiting (pid: 63628)
+[2023-06-14 15:35:08 +0000] [63620] [INFO] Shutting down: Master
+[2023-06-14 15:35:08 +0000] [63680] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f91d3639d80>
+  on_reload: <function OnReload.on_reload at 0x7f91d3639ea0>
+  when_ready: <function WhenReady.when_ready at 0x7f91d3639fc0>
+  pre_fork: <function Prefork.pre_fork at 0x7f91d363a0e0>
+  post_fork: <function Postfork.post_fork at 0x7f91d363a200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f91d363a320>
+  worker_int: <function WorkerInt.worker_int at 0x7f91d363a440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f91d363a560>
+  pre_exec: <function PreExec.pre_exec at 0x7f91d363a680>
+  pre_request: <function PreRequest.pre_request at 0x7f91d363a7a0>
+  post_request: <function PostRequest.post_request at 0x7f91d363a830>
+  child_exit: <function ChildExit.child_exit at 0x7f91d363a950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f91d363aa70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f91d363ab90>
+  on_exit: <function OnExit.on_exit at 0x7f91d363acb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-14 15:35:08 +0000] [63680] [INFO] Starting gunicorn 20.1.0
+[2023-06-14 15:35:08 +0000] [63680] [DEBUG] Arbiter booted
+[2023-06-14 15:35:08 +0000] [63680] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (63680)
+[2023-06-14 15:35:08 +0000] [63680] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-14 15:35:08 +0000] [63687] [INFO] Booting worker with pid: 63687
+[2023-06-14 15:35:08 +0000] [63688] [INFO] Booting worker with pid: 63688
+[2023-06-14 15:35:08 +0000] [63689] [INFO] Booting worker with pid: 63689
+[2023-06-14 15:35:08 +0000] [63690] [INFO] Booting worker with pid: 63690
+[2023-06-14 15:35:08 +0000] [63680] [DEBUG] 4 workers
+[2023-06-14 15:35:09 +0000] [63688] [INFO] Started server process [63688]
+[2023-06-14 15:35:09 +0000] [63688] [INFO] Waiting for application startup.
+[2023-06-14 15:35:09 +0000] [63688] [INFO] Application startup complete.
+[2023-06-14 15:35:09 +0000] [63687] [INFO] Started server process [63687]
+[2023-06-14 15:35:09 +0000] [63687] [INFO] Waiting for application startup.
+[2023-06-14 15:35:09 +0000] [63687] [INFO] Application startup complete.
+[2023-06-14 15:35:09 +0000] [63689] [INFO] Started server process [63689]
+[2023-06-14 15:35:09 +0000] [63689] [INFO] Waiting for application startup.
+[2023-06-14 15:35:09 +0000] [63689] [INFO] Application startup complete.
+[2023-06-14 15:35:09 +0000] [63690] [INFO] Started server process [63690]
+[2023-06-14 15:35:09 +0000] [63690] [INFO] Waiting for application startup.
+[2023-06-14 15:35:09 +0000] [63690] [INFO] Application startup complete.
+[2023-06-14 15:35:51 +0000] [63680] [INFO] Handling signal: term
+[2023-06-14 15:35:51 +0000] [63688] [INFO] Shutting down
+[2023-06-14 15:35:51 +0000] [63690] [INFO] Shutting down
+[2023-06-14 15:35:51 +0000] [63687] [INFO] Shutting down
+[2023-06-14 15:35:51 +0000] [63689] [INFO] Shutting down
+[2023-06-14 15:35:51 +0000] [63688] [INFO] Waiting for application shutdown.
+[2023-06-14 15:35:51 +0000] [63688] [INFO] Application shutdown complete.
+[2023-06-14 15:35:51 +0000] [63688] [INFO] Finished server process [63688]
+[2023-06-14 15:35:51 +0000] [63688] [INFO] Worker exiting (pid: 63688)
+[2023-06-14 15:35:51 +0000] [63690] [INFO] Waiting for application shutdown.
+[2023-06-14 15:35:51 +0000] [63690] [INFO] Application shutdown complete.
+[2023-06-14 15:35:51 +0000] [63690] [INFO] Finished server process [63690]
+[2023-06-14 15:35:51 +0000] [63690] [INFO] Worker exiting (pid: 63690)
+[2023-06-14 15:35:51 +0000] [63687] [INFO] Waiting for application shutdown.
+[2023-06-14 15:35:51 +0000] [63687] [INFO] Application shutdown complete.
+[2023-06-14 15:35:51 +0000] [63687] [INFO] Finished server process [63687]
+[2023-06-14 15:35:51 +0000] [63687] [INFO] Worker exiting (pid: 63687)
+[2023-06-14 15:35:51 +0000] [63689] [INFO] Waiting for application shutdown.
+[2023-06-14 15:35:51 +0000] [63689] [INFO] Application shutdown complete.
+[2023-06-14 15:35:51 +0000] [63689] [INFO] Finished server process [63689]
+[2023-06-14 15:35:51 +0000] [63689] [INFO] Worker exiting (pid: 63689)
+[2023-06-14 15:35:51 +0000] [63680] [INFO] Shutting down: Master
+[2023-06-14 15:35:52 +0000] [63738] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fcac3b95d80>
+  on_reload: <function OnReload.on_reload at 0x7fcac3b95ea0>
+  when_ready: <function WhenReady.when_ready at 0x7fcac3b95fc0>
+  pre_fork: <function Prefork.pre_fork at 0x7fcac3b960e0>
+  post_fork: <function Postfork.post_fork at 0x7fcac3b96200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fcac3b96320>
+  worker_int: <function WorkerInt.worker_int at 0x7fcac3b96440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fcac3b96560>
+  pre_exec: <function PreExec.pre_exec at 0x7fcac3b96680>
+  pre_request: <function PreRequest.pre_request at 0x7fcac3b967a0>
+  post_request: <function PostRequest.post_request at 0x7fcac3b96830>
+  child_exit: <function ChildExit.child_exit at 0x7fcac3b96950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fcac3b96a70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fcac3b96b90>
+  on_exit: <function OnExit.on_exit at 0x7fcac3b96cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-14 15:35:52 +0000] [63738] [INFO] Starting gunicorn 20.1.0
+[2023-06-14 15:35:52 +0000] [63738] [DEBUG] Arbiter booted
+[2023-06-14 15:35:52 +0000] [63738] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (63738)
+[2023-06-14 15:35:52 +0000] [63738] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-14 15:35:52 +0000] [63747] [INFO] Booting worker with pid: 63747
+[2023-06-14 15:35:52 +0000] [63748] [INFO] Booting worker with pid: 63748
+[2023-06-14 15:35:52 +0000] [63749] [INFO] Booting worker with pid: 63749
+[2023-06-14 15:35:52 +0000] [63750] [INFO] Booting worker with pid: 63750
+[2023-06-14 15:35:52 +0000] [63738] [DEBUG] 4 workers
+[2023-06-14 15:35:53 +0000] [63747] [INFO] Started server process [63747]
+[2023-06-14 15:35:53 +0000] [63747] [INFO] Waiting for application startup.
+[2023-06-14 15:35:53 +0000] [63747] [INFO] Application startup complete.
+[2023-06-14 15:35:53 +0000] [63748] [INFO] Started server process [63748]
+[2023-06-14 15:35:53 +0000] [63748] [INFO] Waiting for application startup.
+[2023-06-14 15:35:53 +0000] [63748] [INFO] Application startup complete.
+[2023-06-14 15:35:53 +0000] [63749] [INFO] Started server process [63749]
+[2023-06-14 15:35:53 +0000] [63749] [INFO] Waiting for application startup.
+[2023-06-14 15:35:53 +0000] [63749] [INFO] Application startup complete.
+[2023-06-14 15:35:53 +0000] [63750] [INFO] Started server process [63750]
+[2023-06-14 15:35:53 +0000] [63750] [INFO] Waiting for application startup.
+[2023-06-14 15:35:53 +0000] [63750] [INFO] Application startup complete.
+[2023-06-14 15:36:15 +0000] [63738] [INFO] Handling signal: term
+[2023-06-14 15:36:15 +0000] [63750] [INFO] Shutting down
+[2023-06-14 15:36:15 +0000] [63749] [INFO] Shutting down
+[2023-06-14 15:36:15 +0000] [63748] [INFO] Shutting down
+[2023-06-14 15:36:15 +0000] [63747] [INFO] Shutting down
+[2023-06-14 15:36:15 +0000] [63750] [INFO] Waiting for application shutdown.
+[2023-06-14 15:36:15 +0000] [63750] [INFO] Application shutdown complete.
+[2023-06-14 15:36:15 +0000] [63750] [INFO] Finished server process [63750]
+[2023-06-14 15:36:15 +0000] [63750] [INFO] Worker exiting (pid: 63750)
+[2023-06-14 15:36:15 +0000] [63749] [INFO] Waiting for application shutdown.
+[2023-06-14 15:36:15 +0000] [63749] [INFO] Application shutdown complete.
+[2023-06-14 15:36:15 +0000] [63749] [INFO] Finished server process [63749]
+[2023-06-14 15:36:15 +0000] [63749] [INFO] Worker exiting (pid: 63749)
+[2023-06-14 15:36:15 +0000] [63748] [INFO] Waiting for application shutdown.
+[2023-06-14 15:36:15 +0000] [63748] [INFO] Application shutdown complete.
+[2023-06-14 15:36:15 +0000] [63748] [INFO] Finished server process [63748]
+[2023-06-14 15:36:15 +0000] [63748] [INFO] Worker exiting (pid: 63748)
+[2023-06-14 15:36:15 +0000] [63747] [INFO] Waiting for application shutdown.
+[2023-06-14 15:36:15 +0000] [63747] [INFO] Application shutdown complete.
+[2023-06-14 15:36:15 +0000] [63747] [INFO] Finished server process [63747]
+[2023-06-14 15:36:15 +0000] [63747] [INFO] Worker exiting (pid: 63747)
+[2023-06-14 15:36:16 +0000] [63738] [INFO] Shutting down: Master
+[2023-06-14 15:36:16 +0000] [63784] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ff613275d80>
+  on_reload: <function OnReload.on_reload at 0x7ff613275ea0>
+  when_ready: <function WhenReady.when_ready at 0x7ff613275fc0>
+  pre_fork: <function Prefork.pre_fork at 0x7ff6132760e0>
+  post_fork: <function Postfork.post_fork at 0x7ff613276200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff613276320>
+  worker_int: <function WorkerInt.worker_int at 0x7ff613276440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff613276560>
+  pre_exec: <function PreExec.pre_exec at 0x7ff613276680>
+  pre_request: <function PreRequest.pre_request at 0x7ff6132767a0>
+  post_request: <function PostRequest.post_request at 0x7ff613276830>
+  child_exit: <function ChildExit.child_exit at 0x7ff613276950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff613276a70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff613276b90>
+  on_exit: <function OnExit.on_exit at 0x7ff613276cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-14 15:36:16 +0000] [63784] [INFO] Starting gunicorn 20.1.0
+[2023-06-14 15:36:16 +0000] [63784] [DEBUG] Arbiter booted
+[2023-06-14 15:36:16 +0000] [63784] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (63784)
+[2023-06-14 15:36:16 +0000] [63784] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-14 15:36:16 +0000] [63790] [INFO] Booting worker with pid: 63790
+[2023-06-14 15:36:16 +0000] [63791] [INFO] Booting worker with pid: 63791
+[2023-06-14 15:36:16 +0000] [63792] [INFO] Booting worker with pid: 63792
+[2023-06-14 15:36:16 +0000] [63793] [INFO] Booting worker with pid: 63793
+[2023-06-14 15:36:16 +0000] [63784] [DEBUG] 4 workers
+[2023-06-14 15:36:17 +0000] [63790] [INFO] Started server process [63790]
+[2023-06-14 15:36:17 +0000] [63790] [INFO] Waiting for application startup.
+[2023-06-14 15:36:17 +0000] [63790] [INFO] Application startup complete.
+[2023-06-14 15:36:18 +0000] [63791] [INFO] Started server process [63791]
+[2023-06-14 15:36:18 +0000] [63791] [INFO] Waiting for application startup.
+[2023-06-14 15:36:18 +0000] [63791] [INFO] Application startup complete.
+[2023-06-14 15:36:18 +0000] [63792] [INFO] Started server process [63792]
+[2023-06-14 15:36:18 +0000] [63792] [INFO] Waiting for application startup.
+[2023-06-14 15:36:18 +0000] [63792] [INFO] Application startup complete.
+[2023-06-14 15:36:18 +0000] [63793] [INFO] Started server process [63793]
+[2023-06-14 15:36:18 +0000] [63793] [INFO] Waiting for application startup.
+[2023-06-14 15:36:18 +0000] [63793] [INFO] Application startup complete.
+[2023-06-14 15:37:22 +0000] [63784] [INFO] Handling signal: term
+[2023-06-14 15:37:22 +0000] [63792] [INFO] Shutting down
+[2023-06-14 15:37:22 +0000] [63791] [INFO] Shutting down
+[2023-06-14 15:37:22 +0000] [63790] [INFO] Shutting down
+[2023-06-14 15:37:22 +0000] [63793] [INFO] Shutting down
+[2023-06-14 15:37:22 +0000] [63792] [INFO] Waiting for application shutdown.
+[2023-06-14 15:37:22 +0000] [63792] [INFO] Application shutdown complete.
+[2023-06-14 15:37:22 +0000] [63792] [INFO] Finished server process [63792]
+[2023-06-14 15:37:22 +0000] [63792] [INFO] Worker exiting (pid: 63792)
+[2023-06-14 15:37:22 +0000] [63791] [INFO] Waiting for application shutdown.
+[2023-06-14 15:37:22 +0000] [63791] [INFO] Application shutdown complete.
+[2023-06-14 15:37:22 +0000] [63791] [INFO] Finished server process [63791]
+[2023-06-14 15:37:22 +0000] [63791] [INFO] Worker exiting (pid: 63791)
+[2023-06-14 15:37:22 +0000] [63790] [INFO] Waiting for application shutdown.
+[2023-06-14 15:37:22 +0000] [63790] [INFO] Application shutdown complete.
+[2023-06-14 15:37:22 +0000] [63790] [INFO] Finished server process [63790]
+[2023-06-14 15:37:22 +0000] [63790] [INFO] Worker exiting (pid: 63790)
+[2023-06-14 15:37:22 +0000] [63793] [INFO] Waiting for application shutdown.
+[2023-06-14 15:37:22 +0000] [63793] [INFO] Application shutdown complete.
+[2023-06-14 15:37:22 +0000] [63793] [INFO] Finished server process [63793]
+[2023-06-14 15:37:22 +0000] [63793] [INFO] Worker exiting (pid: 63793)
+[2023-06-14 15:37:22 +0000] [63784] [INFO] Shutting down: Master
+[2023-06-14 15:37:23 +0000] [63871] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fe909bfdd80>
+  on_reload: <function OnReload.on_reload at 0x7fe909bfdea0>
+  when_ready: <function WhenReady.when_ready at 0x7fe909bfdfc0>
+  pre_fork: <function Prefork.pre_fork at 0x7fe909bfe0e0>
+  post_fork: <function Postfork.post_fork at 0x7fe909bfe200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe909bfe320>
+  worker_int: <function WorkerInt.worker_int at 0x7fe909bfe440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe909bfe560>
+  pre_exec: <function PreExec.pre_exec at 0x7fe909bfe680>
+  pre_request: <function PreRequest.pre_request at 0x7fe909bfe7a0>
+  post_request: <function PostRequest.post_request at 0x7fe909bfe830>
+  child_exit: <function ChildExit.child_exit at 0x7fe909bfe950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe909bfea70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe909bfeb90>
+  on_exit: <function OnExit.on_exit at 0x7fe909bfecb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-14 15:37:23 +0000] [63871] [INFO] Starting gunicorn 20.1.0
+[2023-06-14 15:37:23 +0000] [63871] [DEBUG] Arbiter booted
+[2023-06-14 15:37:23 +0000] [63871] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (63871)
+[2023-06-14 15:37:23 +0000] [63871] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-14 15:37:23 +0000] [63880] [INFO] Booting worker with pid: 63880
+[2023-06-14 15:37:23 +0000] [63881] [INFO] Booting worker with pid: 63881
+[2023-06-14 15:37:23 +0000] [63882] [INFO] Booting worker with pid: 63882
+[2023-06-14 15:37:23 +0000] [63883] [INFO] Booting worker with pid: 63883
+[2023-06-14 15:37:23 +0000] [63871] [DEBUG] 4 workers
+[2023-06-14 15:37:24 +0000] [63880] [INFO] Started server process [63880]
+[2023-06-14 15:37:24 +0000] [63880] [INFO] Waiting for application startup.
+[2023-06-14 15:37:24 +0000] [63880] [INFO] Application startup complete.
+[2023-06-14 15:37:24 +0000] [63881] [INFO] Started server process [63881]
+[2023-06-14 15:37:24 +0000] [63881] [INFO] Waiting for application startup.
+[2023-06-14 15:37:24 +0000] [63881] [INFO] Application startup complete.
+[2023-06-14 15:37:24 +0000] [63882] [INFO] Started server process [63882]
+[2023-06-14 15:37:24 +0000] [63882] [INFO] Waiting for application startup.
+[2023-06-14 15:37:24 +0000] [63882] [INFO] Application startup complete.
+[2023-06-14 15:37:24 +0000] [63883] [INFO] Started server process [63883]
+[2023-06-14 15:37:24 +0000] [63883] [INFO] Waiting for application startup.
+[2023-06-14 15:37:24 +0000] [63883] [INFO] Application startup complete.
+[2023-06-14 15:38:10 +0000] [63871] [INFO] Handling signal: term
+[2023-06-14 15:38:10 +0000] [63881] [INFO] Shutting down
+[2023-06-14 15:38:10 +0000] [63882] [INFO] Shutting down
+[2023-06-14 15:38:10 +0000] [63880] [INFO] Shutting down
+[2023-06-14 15:38:10 +0000] [63883] [INFO] Shutting down
+[2023-06-14 15:38:10 +0000] [63881] [INFO] Waiting for application shutdown.
+[2023-06-14 15:38:10 +0000] [63881] [INFO] Application shutdown complete.
+[2023-06-14 15:38:10 +0000] [63881] [INFO] Finished server process [63881]
+[2023-06-14 15:38:10 +0000] [63881] [INFO] Worker exiting (pid: 63881)
+[2023-06-14 15:38:11 +0000] [63882] [INFO] Waiting for application shutdown.
+[2023-06-14 15:38:11 +0000] [63882] [INFO] Application shutdown complete.
+[2023-06-14 15:38:11 +0000] [63882] [INFO] Finished server process [63882]
+[2023-06-14 15:38:11 +0000] [63882] [INFO] Worker exiting (pid: 63882)
+[2023-06-14 15:38:11 +0000] [63880] [INFO] Waiting for application shutdown.
+[2023-06-14 15:38:11 +0000] [63880] [INFO] Application shutdown complete.
+[2023-06-14 15:38:11 +0000] [63880] [INFO] Finished server process [63880]
+[2023-06-14 15:38:11 +0000] [63880] [INFO] Worker exiting (pid: 63880)
+[2023-06-14 15:38:11 +0000] [63883] [INFO] Waiting for application shutdown.
+[2023-06-14 15:38:11 +0000] [63883] [INFO] Application shutdown complete.
+[2023-06-14 15:38:11 +0000] [63883] [INFO] Finished server process [63883]
+[2023-06-14 15:38:11 +0000] [63883] [INFO] Worker exiting (pid: 63883)
+[2023-06-14 15:38:11 +0000] [63871] [INFO] Shutting down: Master
+[2023-06-14 15:38:11 +0000] [63944] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f5b54aa9d80>
+  on_reload: <function OnReload.on_reload at 0x7f5b54aa9ea0>
+  when_ready: <function WhenReady.when_ready at 0x7f5b54aa9fc0>
+  pre_fork: <function Prefork.pre_fork at 0x7f5b54aaa0e0>
+  post_fork: <function Postfork.post_fork at 0x7f5b54aaa200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f5b54aaa320>
+  worker_int: <function WorkerInt.worker_int at 0x7f5b54aaa440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f5b54aaa560>
+  pre_exec: <function PreExec.pre_exec at 0x7f5b54aaa680>
+  pre_request: <function PreRequest.pre_request at 0x7f5b54aaa7a0>
+  post_request: <function PostRequest.post_request at 0x7f5b54aaa830>
+  child_exit: <function ChildExit.child_exit at 0x7f5b54aaa950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f5b54aaaa70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f5b54aaab90>
+  on_exit: <function OnExit.on_exit at 0x7f5b54aaacb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-14 15:38:11 +0000] [63944] [INFO] Starting gunicorn 20.1.0
+[2023-06-14 15:38:11 +0000] [63944] [DEBUG] Arbiter booted
+[2023-06-14 15:38:11 +0000] [63944] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (63944)
+[2023-06-14 15:38:11 +0000] [63944] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-14 15:38:11 +0000] [63946] [INFO] Booting worker with pid: 63946
+[2023-06-14 15:38:11 +0000] [63947] [INFO] Booting worker with pid: 63947
+[2023-06-14 15:38:11 +0000] [63948] [INFO] Booting worker with pid: 63948
+[2023-06-14 15:38:12 +0000] [63949] [INFO] Booting worker with pid: 63949
+[2023-06-14 15:38:12 +0000] [63944] [DEBUG] 4 workers
+[2023-06-14 15:38:13 +0000] [63946] [INFO] Started server process [63946]
+[2023-06-14 15:38:13 +0000] [63946] [INFO] Waiting for application startup.
+[2023-06-14 15:38:13 +0000] [63946] [INFO] Application startup complete.
+[2023-06-14 15:38:13 +0000] [63947] [INFO] Started server process [63947]
+[2023-06-14 15:38:13 +0000] [63947] [INFO] Waiting for application startup.
+[2023-06-14 15:38:13 +0000] [63947] [INFO] Application startup complete.
+[2023-06-14 15:38:13 +0000] [63948] [INFO] Started server process [63948]
+[2023-06-14 15:38:13 +0000] [63948] [INFO] Waiting for application startup.
+[2023-06-14 15:38:13 +0000] [63948] [INFO] Application startup complete.
+[2023-06-14 15:38:13 +0000] [63949] [INFO] Started server process [63949]
+[2023-06-14 15:38:13 +0000] [63949] [INFO] Waiting for application startup.
+[2023-06-14 15:38:13 +0000] [63949] [INFO] Application startup complete.
+[2023-06-14 15:39:13 +0000] [63944] [INFO] Handling signal: term
+[2023-06-14 15:39:13 +0000] [63948] [INFO] Shutting down
+[2023-06-14 15:39:13 +0000] [63946] [INFO] Shutting down
+[2023-06-14 15:39:13 +0000] [63947] [INFO] Shutting down
+[2023-06-14 15:39:13 +0000] [63949] [INFO] Shutting down
+[2023-06-14 15:39:13 +0000] [63948] [INFO] Waiting for application shutdown.
+[2023-06-14 15:39:13 +0000] [63948] [INFO] Application shutdown complete.
+[2023-06-14 15:39:13 +0000] [63948] [INFO] Finished server process [63948]
+[2023-06-14 15:39:13 +0000] [63948] [INFO] Worker exiting (pid: 63948)
+[2023-06-14 15:39:13 +0000] [63946] [INFO] Waiting for application shutdown.
+[2023-06-14 15:39:13 +0000] [63946] [INFO] Application shutdown complete.
+[2023-06-14 15:39:13 +0000] [63946] [INFO] Finished server process [63946]
+[2023-06-14 15:39:13 +0000] [63946] [INFO] Worker exiting (pid: 63946)
+[2023-06-14 15:39:13 +0000] [63947] [INFO] Waiting for application shutdown.
+[2023-06-14 15:39:13 +0000] [63947] [INFO] Application shutdown complete.
+[2023-06-14 15:39:13 +0000] [63947] [INFO] Finished server process [63947]
+[2023-06-14 15:39:13 +0000] [63947] [INFO] Worker exiting (pid: 63947)
+[2023-06-14 15:39:13 +0000] [63949] [INFO] Waiting for application shutdown.
+[2023-06-14 15:39:13 +0000] [63949] [INFO] Application shutdown complete.
+[2023-06-14 15:39:13 +0000] [63949] [INFO] Finished server process [63949]
+[2023-06-14 15:39:13 +0000] [63949] [INFO] Worker exiting (pid: 63949)
+[2023-06-14 15:39:14 +0000] [63944] [INFO] Shutting down: Master
+[2023-06-14 15:39:14 +0000] [64082] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fe624fc1d80>
+  on_reload: <function OnReload.on_reload at 0x7fe624fc1ea0>
+  when_ready: <function WhenReady.when_ready at 0x7fe624fc1fc0>
+  pre_fork: <function Prefork.pre_fork at 0x7fe624fc20e0>
+  post_fork: <function Postfork.post_fork at 0x7fe624fc2200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe624fc2320>
+  worker_int: <function WorkerInt.worker_int at 0x7fe624fc2440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe624fc2560>
+  pre_exec: <function PreExec.pre_exec at 0x7fe624fc2680>
+  pre_request: <function PreRequest.pre_request at 0x7fe624fc27a0>
+  post_request: <function PostRequest.post_request at 0x7fe624fc2830>
+  child_exit: <function ChildExit.child_exit at 0x7fe624fc2950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe624fc2a70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe624fc2b90>
+  on_exit: <function OnExit.on_exit at 0x7fe624fc2cb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-14 15:39:14 +0000] [64082] [INFO] Starting gunicorn 20.1.0
+[2023-06-14 15:39:14 +0000] [64082] [DEBUG] Arbiter booted
+[2023-06-14 15:39:14 +0000] [64082] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (64082)
+[2023-06-14 15:39:14 +0000] [64082] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-14 15:39:14 +0000] [64084] [INFO] Booting worker with pid: 64084
+[2023-06-14 15:39:14 +0000] [64085] [INFO] Booting worker with pid: 64085
+[2023-06-14 15:39:14 +0000] [64086] [INFO] Booting worker with pid: 64086
+[2023-06-14 15:39:14 +0000] [64087] [INFO] Booting worker with pid: 64087
+[2023-06-14 15:39:14 +0000] [64082] [DEBUG] 4 workers
+[2023-06-14 15:39:16 +0000] [64084] [INFO] Started server process [64084]
+[2023-06-14 15:39:16 +0000] [64084] [INFO] Waiting for application startup.
+[2023-06-14 15:39:16 +0000] [64084] [INFO] Application startup complete.
+[2023-06-14 15:39:16 +0000] [64085] [INFO] Started server process [64085]
+[2023-06-14 15:39:16 +0000] [64085] [INFO] Waiting for application startup.
+[2023-06-14 15:39:16 +0000] [64085] [INFO] Application startup complete.
+[2023-06-14 15:39:16 +0000] [64086] [INFO] Started server process [64086]
+[2023-06-14 15:39:16 +0000] [64086] [INFO] Waiting for application startup.
+[2023-06-14 15:39:16 +0000] [64086] [INFO] Application startup complete.
+[2023-06-14 15:39:16 +0000] [64087] [INFO] Started server process [64087]
+[2023-06-14 15:39:16 +0000] [64087] [INFO] Waiting for application startup.
+[2023-06-14 15:39:16 +0000] [64087] [INFO] Application startup complete.
+[2023-06-22 08:52:36 +0000] [64082] [INFO] Handling signal: term
+[2023-06-22 08:52:36 +0000] [64084] [INFO] Shutting down
+[2023-06-22 08:52:36 +0000] [64087] [INFO] Shutting down
+[2023-06-22 08:52:36 +0000] [64085] [INFO] Shutting down
+[2023-06-22 08:52:36 +0000] [64086] [INFO] Shutting down
+[2023-06-22 08:52:36 +0000] [64084] [INFO] Waiting for application shutdown.
+[2023-06-22 08:52:36 +0000] [64084] [INFO] Application shutdown complete.
+[2023-06-22 08:52:36 +0000] [64084] [INFO] Finished server process [64084]
+[2023-06-22 08:52:36 +0000] [64087] [INFO] Waiting for application shutdown.
+[2023-06-22 08:52:36 +0000] [64085] [INFO] Waiting for application shutdown.
+[2023-06-22 08:52:36 +0000] [64086] [INFO] Waiting for application shutdown.
+[2023-06-22 08:52:36 +0000] [64084] [INFO] Worker exiting (pid: 64084)
+[2023-06-22 08:52:36 +0000] [64087] [INFO] Application shutdown complete.
+[2023-06-22 08:52:36 +0000] [64087] [INFO] Finished server process [64087]
+[2023-06-22 08:52:36 +0000] [64086] [INFO] Application shutdown complete.
+[2023-06-22 08:52:36 +0000] [64086] [INFO] Finished server process [64086]
+[2023-06-22 08:52:36 +0000] [64085] [INFO] Application shutdown complete.
+[2023-06-22 08:52:36 +0000] [64085] [INFO] Finished server process [64085]
+[2023-06-22 08:52:36 +0000] [64086] [INFO] Worker exiting (pid: 64086)
+[2023-06-22 08:52:36 +0000] [64087] [INFO] Worker exiting (pid: 64087)
+[2023-06-22 08:52:36 +0000] [64085] [INFO] Worker exiting (pid: 64085)
+[2023-06-22 08:52:37 +0000] [64082] [INFO] Shutting down: Master
+[2023-06-22 08:52:37 +0000] [97860] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/fluentai-be/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/fluentai-be
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/fluentai-be/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/fluentai-be/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f974bb0dd80>
+  on_reload: <function OnReload.on_reload at 0x7f974bb0dea0>
+  when_ready: <function WhenReady.when_ready at 0x7f974bb0dfc0>
+  pre_fork: <function Prefork.pre_fork at 0x7f974bb0e0e0>
+  post_fork: <function Postfork.post_fork at 0x7f974bb0e200>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f974bb0e320>
+  worker_int: <function WorkerInt.worker_int at 0x7f974bb0e440>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f974bb0e560>
+  pre_exec: <function PreExec.pre_exec at 0x7f974bb0e680>
+  pre_request: <function PreRequest.pre_request at 0x7f974bb0e7a0>
+  post_request: <function PostRequest.post_request at 0x7f974bb0e830>
+  child_exit: <function ChildExit.child_exit at 0x7f974bb0e950>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f974bb0ea70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f974bb0eb90>
+  on_exit: <function OnExit.on_exit at 0x7f974bb0ecb0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-22 08:52:37 +0000] [97860] [INFO] Starting gunicorn 20.1.0
+[2023-06-22 08:52:37 +0000] [97860] [DEBUG] Arbiter booted
+[2023-06-22 08:52:37 +0000] [97860] [INFO] Listening at: unix:/home/ubuntu/fluentai-be/gunicorn.sock (97860)
+[2023-06-22 08:52:37 +0000] [97860] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-22 08:52:37 +0000] [97862] [INFO] Booting worker with pid: 97862
+[2023-06-22 08:52:37 +0000] [97863] [INFO] Booting worker with pid: 97863
+[2023-06-22 08:52:37 +0000] [97864] [INFO] Booting worker with pid: 97864
+[2023-06-22 08:52:37 +0000] [97865] [INFO] Booting worker with pid: 97865
+[2023-06-22 08:52:37 +0000] [97860] [DEBUG] 4 workers
+[2023-06-22 08:52:38 +0000] [97863] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/fluentai-be/main.py", line 7, in <module>
+    from app.routes import router as api_router
+  File "/home/ubuntu/fluentai-be/app/routes/__init__.py", line 2, in <module>
+    from . import user, chat,languages,referrals
+  File "/home/ubuntu/fluentai-be/app/routes/chat.py", line 3, in <module>
+    from app.chats.get_response import get_chat_response
+  File "/home/ubuntu/fluentai-be/app/chats/get_response.py", line 5, in <module>
+    from config import AUDIO_FILE_PATH, DEEPGRAM_CHINESE_LANG_CODE, DEEPGRAM_SPANISH_LANG_CODE, LANGUAGE_MAPPING, \
+ImportError: cannot import name 'LANGUAGE_NAMES' from 'config' (/home/ubuntu/fluentai-be/config.py)
+[2023-06-22 08:52:38 +0000] [97863] [INFO] Worker exiting (pid: 97863)
+[2023-06-22 08:52:38 +0000] [97864] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/fluentai-be/main.py", line 7, in <module>
+    from app.routes import router as api_router
+  File "/home/ubuntu/fluentai-be/app/routes/__init__.py", line 2, in <module>
+    from . import user, chat,languages,referrals
+  File "/home/ubuntu/fluentai-be/app/routes/chat.py", line 3, in <module>
+    from app.chats.get_response import get_chat_response
+  File "/home/ubuntu/fluentai-be/app/chats/get_response.py", line 5, in <module>
+    from config import AUDIO_FILE_PATH, DEEPGRAM_CHINESE_LANG_CODE, DEEPGRAM_SPANISH_LANG_CODE, LANGUAGE_MAPPING, \
+ImportError: cannot import name 'LANGUAGE_NAMES' from 'config' (/home/ubuntu/fluentai-be/config.py)
+[2023-06-22 08:52:38 +0000] [97862] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/fluentai-be/main.py", line 7, in <module>
+    from app.routes import router as api_router
+  File "/home/ubuntu/fluentai-be/app/routes/__init__.py", line 2, in <module>
+    from . import user, chat,languages,referrals
+  File "/home/ubuntu/fluentai-be/app/routes/chat.py", line 3, in <module>
+    from app.chats.get_response import get_chat_response
+  File "/home/ubuntu/fluentai-be/app/chats/get_response.py", line 5, in <module>
+    from config import AUDIO_FILE_PATH, DEEPGRAM_CHINESE_LANG_CODE, DEEPGRAM_SPANISH_LANG_CODE, LANGUAGE_MAPPING, \
+ImportError: cannot import name 'LANGUAGE_NAMES' from 'config' (/home/ubuntu/fluentai-be/config.py)
+[2023-06-22 08:52:38 +0000] [97864] [INFO] Worker exiting (pid: 97864)
+[2023-06-22 08:52:38 +0000] [97862] [INFO] Worker exiting (pid: 97862)
+[2023-06-22 08:52:38 +0000] [97865] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/fluentai-be/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/fluentai-be/main.py", line 7, in <module>
+    from app.routes import router as api_router
+  File "/home/ubuntu/fluentai-be/app/routes/__init__.py", line 2, in <module>
+    from . import user, chat,languages,referrals
+  File "/home/ubuntu/fluentai-be/app/routes/chat.py", line 3, in <module>
+    from app.chats.get_response import get_chat_response
+  File "/home/ubuntu/fluentai-be/app/chats/get_response.py", line 5, in <module>
+    from config import AUDIO_FILE_PATH, DEEPGRAM_CHINESE_LANG_CODE, DEEPGRAM_SPANISH_LANG_CODE, LANGUAGE_MAPPING, \
+ImportError: cannot import name 'LANGUAGE_NAMES' from 'config' (/home/ubuntu/fluentai-be/config.py)
+[2023-06-22 08:52:38 +0000] [97865] [INFO] Worker exiting (pid: 97865)
+[2023-06-22 08:52:38 +0000] [97860] [WARNING] Worker with pid 97865 was terminated due to signal 15
+[2023-06-22 08:52:38 +0000] [97860] [WARNING] Worker with pid 97863 was terminated due to signal 15
+[2023-06-22 08:52:38 +0000] [97860] [WARNING] Worker with pid 97862 was terminated due to signal 15
+[2023-06-22 08:52:38 +0000] [97860] [INFO] Shutting down: Master
+[2023-06-22 08:52:38 +0000] [97860] [INFO] Reason: Worker failed to boot.
